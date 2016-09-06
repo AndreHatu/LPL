@@ -1,0 +1,37 @@
+1	Aventura
+2	Suspense
+3	Terror
+4	Romance
+5	Ficção
+6	Não-Ficção
+7	Biografia
+8	Ficção Científica
+9	Autoajuda
+10	Culinária
+11	Teatro
+12	Infantil
+13	Juvenil
+14	Viagem
+15	Política
+16	Épico
+17	Jogo
+18	Ficção Histórica
+19	Conto
+20	Crônica
+21	Técnico
+22	Programação
+23	Banco de Dados
+24	Erótico
+25	Natalino
+26	Distópico
+27	Afro
+28	Científico
+29	Idioma
+30	Poesia
+31	Antologia
+32	Reflexologia
+33	Cordel
+34	HQ
+35	Mangá
+36	Tragédia
+37	Policial

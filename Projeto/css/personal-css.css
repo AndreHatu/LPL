@@ -1,0 +1,383 @@
+﻿/* Seus estilos aqui! :) */
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+	width: 70%;
+	margin: auto;
+}
+
+.row-padding-extra {
+	padding: 20px;
+}
+
+.dotted-under-border {
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+}
+
+.dotted-top-border {
+	border-top-style: dotted;
+	border-top-width: 1px;
+}
+
+.row-padding-small {
+	padding: 8px;
+}
+
+.round {
+	border-radius: 7px;
+}
+
+.text-size-18 {
+	font-size: 18px;
+}
+
+.dark-grey {
+	background: #5d5c58;
+}
+
+.text-white {
+	color: white;
+}
+
+.text-Lblue {
+	color: #d8ffff;
+}
+
+.text-Lpink2 {
+	color: #f5ead4;
+}
+
+.text-Lgrey {
+	color: #f4f4f4;
+}
+
+.cyan {
+	background: #e5eaee;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	background-image: url("/slats.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center top;
+	background-size: cover;
+}
+
+
+.font-size-20 {
+	font-size: 20px;
+}
+
+.btn-circle {
+	width: 120px;
+	height: 120px;
+	text-align: center;
+	padding: 28px 0;
+	font-size: 48px;
+	line-height: 1.42;
+	border-radius: 60px;
+}
+
+.margin-top-100 {
+	margin-top: 100px;
+}
+
+.margin-left-20 {
+	margin-left: 20px;
+}
+
+.avatar-round {
+	text-align: center;
+	height: 50px;
+	width: 50px;
+	border-radius: 28px;
+}
+
+.header-logo {
+	padding: 14px;
+}
+
+.header-box {
+	padding-top: 14px;
+}
+
+.row-padding {
+	padding: 14px;
+	/*border: 3px solid #000;*/
+}
+
+.second-row {
+	border-width: 5px;
+	border-color: aqua;
+}
+
+.block {
+	display: block;
+}
+
+.white {
+	background: white;
+}
+
+.black-border {
+	border: medium;
+	border-style: groove;
+	border-top-width: 2px;
+	border-color: #f4ebff;
+}
+
+.grey {
+	background: rgba(128,128,128,.5);
+}
+
+.opaco {
+	opacity: 1;
+}
+
+.translucido-meio {
+	opacity: 0.5;
+}
+
+.black {
+	background: black;
+}
+
+.intro-text {
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+
+header {
+	background-image: url('../img/header-bg.jpg');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
+	text-align: center;
+	color: white;
+}
+
+	header .intro-text {
+		padding-top: 100px;
+		padding-bottom: 50px;
+	}
+
+		header .intro-text .intro-lead-in {
+			font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-style: italic;
+			font-size: 22px;
+			line-height: 22px;
+			margin-bottom: 25px;
+		}
+
+		header .intro-text .intro-heading {
+			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 50px;
+			line-height: 50px;
+			margin-bottom: 25px;
+		}
+
+@media (min-width: 768px) {
+	header .intro-text {
+		padding-top: 300px;
+		padding-bottom: 200px;
+	}
+
+		header .intro-text .intro-lead-in {
+			font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			font-style: italic;
+			font-size: 40px;
+			line-height: 40px;
+			margin-bottom: 25px;
+		}
+
+		header .intro-text .intro-heading {
+			font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+			text-transform: uppercase;
+			font-weight: 700;
+			font-size: 75px;
+			line-height: 75px;
+			margin-bottom: 50px;
+		}
+}
+
+.light-cyan {
+	background: lightcyan;
+}
+
+.mint {
+	background: #dbf9da;
+}
+
+.team-member {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+	.team-member img {
+		margin: 0 auto;
+		border: 7px solid white;
+	}
+
+	.team-member h4 {
+		margin-top: 25px;
+		margin-bottom: 0;
+		text-transform: none;
+	}
+
+	.team-member p {
+		margin-top: 0;
+	}
+
+
+.btn-xl {
+	color: white;
+	background-color: #fed136;
+	border-color: #fed136;
+	font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	border-radius: 3px;
+	font-size: 18px;
+	padding: 20px 40px;
+	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	white-space: pre-wrap; /* css-3 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+	white-space: -webkit-pre-wrap; /* Newer versions of Chrome/Safari*/
+	word-break: break-all;
+	white-space: normal;
+	;
+}
+
+	.btn-xl:hover,
+	.btn-xl:focus,
+	.btn-xl:active,
+	.btn-xl.active,
+	.open .dropdown-toggle.btn-xl {
+		color: white;
+		background-color: #fec503;
+		border-color: #f6bf01;
+	}
+
+	.btn-xl:active,
+	.btn-xl.active,
+	.open .dropdown-toggle.btn-xl {
+		background-image: none;
+	}
+
+	.btn-xl.disabled,
+	.btn-xl[disabled],
+	fieldset[disabled] .btn-xl,
+	.btn-xl.disabled:hover,
+	.btn-xl[disabled]:hover,
+	fieldset[disabled] .btn-xl:hover,
+	.btn-xl.disabled:focus,
+	.btn-xl[disabled]:focus,
+	fieldset[disabled] .btn-xl:focus,
+	.btn-xl.disabled:active,
+	.btn-xl[disabled]:active,
+	fieldset[disabled] .btn-xl:active,
+	.btn-xl.disabled.active,
+	.btn-xl[disabled].active,
+	fieldset[disabled] .btn-xl.active {
+		background-color: #fed136;
+		border-color: #fed136;
+	}
+
+	.btn-xl .badge {
+		color: #fed136;
+		background-color: white;
+	}
+
+#loadingDiv {
+	position: fixed;
+	top: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+	background-color: #666;
+	background-image: url('/cute-little-pony.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 10000000;
+	opacity: 0.4;
+	filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+
+.table-style {
+	color: #333;
+	font-family: sans-serif;
+	font-size: 1em;
+	font-weight: 300;
+	text-align: left;
+	line-height: 40px;
+	border-spacing: 0;
+	border: 2px solid #975997;
+	margin: 50px auto;
+}
+
+thead tr:first-child {
+	background: #975997;
+	color: #fff;
+	border: none;
+}
+
+th {
+	font-weight: bold;
+}
+
+	th:first-child, td:first-child {
+		padding: 0 15px 0 20px;
+	}
+
+thead tr:last-child th {
+	border-bottom: 3px solid #ddd;
+}
+
+tbody tr:hover {
+	background-color: #ffeeff;
+}
+
+tbody tr:last-child td {
+	border: none;
+}
+
+tbody td {
+	border-bottom: 1px solid #ddd;
+}
+
+td:last-child {
+	text-align: right;
+	padding-right: 10px;
+}
+
+.button {
+	color: #696969;
+	padding-right: 5px;
+	cursor: pointer;
+}
+
+.alterar:hover {
+	color: #0a79df;
+}
+
+.excluir:hover {
+	color: #dc2a2a;
+}
+
+.editar:hover {
+	color: #6bf98d;
+}
+
+.text-wrap {
+	word-wrap: break-word;
+}
