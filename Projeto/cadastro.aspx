@@ -33,7 +33,7 @@
 	<form id="form1" runat="server">
 		<div>
 			<div class="container">
-				<uc1:UCGuest runat="server" id="UCGuest" />
+				<uc1:UCGuest runat="server" ID="UCGuest" />
 				<div class="cadastro col-xs-12 row-padding white round">
 					<asp:Label runat="server" Text="*Campos Obrigatórios" Font-Size="X-Small" CssClass="text-center"></asp:Label>
 					<div class="row">
@@ -84,7 +84,13 @@
 		<script type="text/javascript" charset="utf-8" src="/js/jquery-2.2.1.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="/js/bootstrap.min.js"></script>
 		<script type="text/javascript" charset="utf-8" src="/js/utils.js"></script>
-
 	</form>
+
+<% if (UCGuest.AlgoDeuErrado == true) { %>
+	<script type="text/javascript">
+		$("#modalLogin").modal({ show: true, keyboard: true, background: true });
+	</script>
+<% } %>
+
 </body>
 </html>

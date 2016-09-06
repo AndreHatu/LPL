@@ -14,9 +14,10 @@ namespace Projeto
 {
 	public partial class UCGuest : System.Web.UI.UserControl
 	{
-		public bool AlgoDeuErrado;
+		public bool AlgoDeuErrado { get; set; }
 		protected void btnEntrar_Click(object sender, EventArgs e)
 		{
+			AlgoDeuErrado = false;
 			if (Usuario.FazerLogin(txtEmail.Text, txtSenha.Text) != null)
 			{
 				Response.Redirect("logado_default.aspx");

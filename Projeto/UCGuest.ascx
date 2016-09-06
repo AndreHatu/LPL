@@ -65,9 +65,3 @@
 	</div>
 	<!-- /.container-fluid -->
 </nav>
-
-<% if (AlgoDeuErrado == true) { %>
-<script type="text/javascript">
-	$("#modalLogin").modal({ show: true, keyboard: true, background: true });
-</script>
-<% } %>

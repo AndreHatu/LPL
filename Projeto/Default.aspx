@@ -24,7 +24,7 @@
 	<form id="form1" runat="server">
 
 		<div class="container">
-			<uc1:UCGuest runat="server" id="UCGuest" />
+			<uc1:UCGuest runat="server" ID="UCGuest" />
 			<header>
 				<div class="container">
 					<div class="intro-text">						
@@ -195,6 +195,12 @@
 	<script type="text/javascript" charset="utf-8" src="/js/bootstrap.min.js"></script>
 	<script type="text/javascript" charset="utf-8" src="/js/utils.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+<% if (UCGuest.AlgoDeuErrado == true) { %>
+	<script type="text/javascript">
+		$("#modalLogin").modal({ show: true, keyboard: true, background: true });
+	</script>
+<% } %>
 
 	<script type="text/javascript">
 		(function ($) {
