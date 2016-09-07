@@ -373,3 +373,7 @@ td:last-child {
 .text-wrap {
 	word-wrap: break-word;
 }
+
+.purple{
+    color: #770077;
+}
