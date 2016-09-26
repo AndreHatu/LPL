@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <asp:Label runat="server" BackColor="Green" Font-Size="XX-Large" ID="lblSucesso" CssClass="label label-success"></asp:Label>
+                    <a href="logado_default.aspx"><asp:Label runat="server" BackColor="Green" Font-Size="XX-Large" ID="lblSucesso" CssClass="label label-success"></asp:Label></a>
                 </div>
                 <div class="cadastro col-xs-12 row-padding white round">
                     <asp:Label runat="server" Font-Size="X-Small" CssClass="text-center"></asp:Label>
@@ -93,7 +93,7 @@
                                     <div class="col-md-4">
                                         <div>
                                             <asp:FileUpload runat="server" ID="fuFoto" accept="image/*" onchange="imagepreview(this)" />
-                                            <label for="imgprw">Avatar Nova:</label>
+                                            <label for="imgprw">Avatar Novo:</label>
                                             <asp:Image runat="server" ID="imgprw" AlternateText="Selecione uma imagem com o botão acima" Width="280" />
 
                                             <label for="imgLoad">Avatar Anterior:</label>
@@ -113,8 +113,6 @@
                         </div>
                     </div>
                     <div class="row text-center">
-                        <a href="Default.aspx">
-                            <asp:Label runat="server" Font-Size="X-Small" Text="Pular esta etapa"></asp:Label></a>
                         <asp:Button runat="server" ID="btnSubmit" CssClass="btn btn btn-primary" Text="Salvar Informações Adicionais" OnClick="btnSalvar_Click" />
                     </div>
                 </div>

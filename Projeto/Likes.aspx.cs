@@ -45,6 +45,7 @@ namespace Projeto
 						ListarLike();
 					}
 				}
+				titlelike.Text = "Alterar Likes";
 			}
 			catch (Exception ex)
 			{
@@ -67,6 +68,7 @@ namespace Projeto
 						ListarDislike();
 					}
 				}
+				titlelike.Text = "Alterar Dislikes";
 			}
 			catch (Exception ex)
 			{

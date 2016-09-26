@@ -14,12 +14,12 @@ namespace Projeto
 {
 	public partial class ComplementosEdicao : System.Web.UI.Page
 	{
-        protected void Page_Load(object sender, EventArgs e)
-        {
-        }
-        protected void UCLogin_Load(object sender, EventArgs e)
+		protected void Page_Load(object sender, EventArgs e)
 		{
-            int id = UCLogin.Usuario.Id;
+		}
+		protected void UCLogin_Load(object sender, EventArgs e)
+		{
+			int id = UCLogin.Usuario.Id;
 
 			using (SqlConnection conn = Sql.OpenConnection())
 			{
@@ -73,8 +73,8 @@ namespace Projeto
 			}
 		}
 
-			
-		
+
+
 
 		protected void btnSalvar_Click(object sender, EventArgs e)
 		{
@@ -109,16 +109,16 @@ namespace Projeto
 				return;
 			}
 
-            
+
 			string celular = txtCelular.Text.Trim();
-            if (string.IsNullOrWhiteSpace(celular) == false)
-            {
-                if (txtCelular.Text.Length < 10)
-                {
-                    lblErroCelular.Text = "Celular Inválido";
-                    return;
-                }
-            }
+			if (string.IsNullOrWhiteSpace(celular) == false)
+			{
+				if (txtCelular.Text.Length < 10)
+				{
+					lblErroCelular.Text = "Celular Inválido";
+					return;
+				}
+			}
 
 			try
 			{
@@ -132,11 +132,12 @@ namespace Projeto
 
 							int id = UCLogin.Usuario.Id;
 							// Cria um comando para inserir um novo registro à tabela
-							using (SqlCommand cmd = new SqlCommand("UPDATE tbUsuario SET Sobremim=@sobreMim, Celular=@celular", conn, tran))
+							using (SqlCommand cmd = new SqlCommand("UPDATE tbUsuario SET Estado=@estado, Sobremim=@sobreMim, Celular=@celular WHERE id=@id", conn, tran))
 							{
 								cmd.Parameters.AddWithValue("@estado", estado);
 								cmd.Parameters.AddWithValue("@sobreMim", SobreMim);
 								cmd.Parameters.AddWithValue("@celular", celular);
+								cmd.Parameters.AddWithValue("@id", UCLogin.Usuario.Id);
 
 								cmd.ExecuteNonQuery();
 							}
@@ -163,7 +164,8 @@ namespace Projeto
 				return;
 			}
 
-	lblSucesso.Text = "Perfil Alterado com sucesso! C:";
-		}
+			lblSucesso.Text = "Perfil Alterado com sucesso! Clique aqui para voltar para a página principal.";
+			
+        }
 	}
 }
