@@ -60,7 +60,7 @@ namespace Projeto
 			{
 
 				// Cria um comando para selecionar registros da tabela
-				using (SqlCommand cmd = new SqlCommand("SELECT tbLivro.Id, tbLivro.Nome, tbLivro.Autor, tbLivro.IdGenero, tbGenero.Nome FROM tbLivro INNER JOIN tbGenero ON tbLivro.IdGenero = tbGenero.Id WHERE tbLivro.IdDono = @iddono ORDER BY tbLivro.Nome ASC", conn))
+				using (SqlCommand cmd = new SqlCommand("SELECT tbLivro.Id, tbLivro.Nome, tbLivro.Autor, tbLivro.IdGenero, tbGenero.Nome FROM tbLivro INNER JOIN tbGenero ON tbLivro.IdGenero = tbGenero.Id WHERE tbLivro.IdDono = @iddono AND tbLivro.Trocado = 0 ORDER BY tbLivro.Nome ASC", conn))
 				{
 					cmd.Parameters.AddWithValue("@iddono", UCLogin.Usuario.Id);
 					using (SqlDataReader reader = cmd.ExecuteReader())
@@ -93,6 +93,31 @@ namespace Projeto
 			{
 				listRepeater.Visible = true;
 				painelVazio.Visible = false;
+			}
+		}
+
+		protected void btnTrocado_Command(object sender, CommandEventArgs e)
+		{
+			int idlivro = int.Parse(e.CommandArgument.ToString());
+			try
+			{
+				using (SqlConnection conn = Sql.OpenConnection())
+				{
+					using (SqlCommand cmd = new SqlCommand("UPDATE tbLivro SET Trocado = 1 WHERE tbLivro.Id = @id", conn))
+					{
+						cmd.Parameters.AddWithValue("@id", idlivro);
+
+						cmd.ExecuteNonQuery();
+
+						System.IO.File.Delete(Server.MapPath("~/App_Data/" + idlivro + ".jpg"));
+
+						Listar();
+					}
+				}
+			}
+			catch (Exception ex)
+			{
+				throw ex;
 			}
 		}
 	}

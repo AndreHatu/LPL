@@ -1,10 +1,8 @@
 ﻿using Projeto.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using Projeto.Utils;
+using Exemplos.Utils;
 
 namespace Projeto
 {
@@ -23,7 +21,20 @@ namespace Projeto
             {
                 IdUsuario = Usuario.Id;
                 lblNome.Text = Usuario.Nome;
-            }
+				int count = 0;
+
+				using (SqlConnection conn = Sql.OpenConnection())
+				{
+					using (SqlCommand cmd = new SqlCommand("SELECT COUNT(Trocado) FROM tbLivro WHERE idDono=@id", conn))
+
+					{
+						cmd.Parameters.AddWithValue("@id", Usuario.Id);
+
+						count = (int) cmd.ExecuteScalar();
+					}
+				}
+				lblTrocados.Text = count.ToString();
+			}
         }
     }
 }

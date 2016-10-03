@@ -1,20 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
-using System.Data.SqlClient;
-using System.Data;
-using Exemplos.Utils;
-using System.Security.Cryptography;
 using Projeto.Models;
-using Projeto.Utils;
 
 
 namespace Projeto
 {
-    public partial class cadastro : System.Web.UI.Page
+	public partial class cadastro : System.Web.UI.Page
 
     {
 

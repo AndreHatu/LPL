@@ -39,16 +39,17 @@
                         <table class="table table-hover table-style">
                             <thead>
                                 <tr>
-                                    <th colspan="6" class="text-center">Gerenciar Livros</th>
+                                    <th colspan="7" class="text-center">Gerenciar Livros</th>
                                 </tr>
                                 <tr>
                                     <th class="col-md-1"></th>
-                                    <th class="col-md-6 ">Nome</th>
+                                    <th class="col-md-5 ">Nome</th>
                                     <th class="col-md-1 text-center">Gênero</th>
                                     <th class="col-md-2 ">Autor</th>
-                                    <th class="col-md-1 text-center">Editar</th>
-                                    <th class="col-md-1 text-center">Excluir</th>
-                                </tr>
+									<th class="col-md-1 text-center">Marcar como Trocado</th>
+									<th class="col-md-1 text-center">Editar</th>
+									<th class="col-md-1 text-center">Excluir</th>
+								</tr>
                             </thead>
                             <tbody>
                     </HeaderTemplate>
@@ -59,10 +60,9 @@
                             <td class=""><%#Eval("Nome") %></td>
                             <td class="text-center"><%#Eval("Genero") %></td>
                             <td><%#Eval("Autor") %></td>
+							<td class="text-center"><asp:LinkButton runat="server" ID="btnTrocado" OnCommand="btnTrocado_Command" CommandArgument='<%#Eval("Id") %>'><i class="glyphicon glyphicon-book button excluir"></i></asp:LinkButton></td>
                             <td class="text-center"><a href="Edicao.aspx?id=<%#Eval("Id")%>"><i class="glyphicon glyphicon-pencil button editar"></i></a></td>
-                            <!--<td class="text-center"><a href="Exclusao.aspx?id=<%#Eval("Id")%>"><i class="glyphicon glyphicon-remove"></i></a></td>-->
-                            <td class="text-center">
-                                <asp:LinkButton runat="server" ID="btnExluir" OnCommand="btnExluir_Command" CommandArgument='<%#Eval("Id") %>'><i class="glyphicon glyphicon-remove button excluir"></i></asp:LinkButton></td>
+                            <td class="text-center"><asp:LinkButton runat="server" ID="btnExluir" OnCommand="btnExluir_Command" CommandArgument='<%#Eval("Id") %>'><i class="glyphicon glyphicon-remove button excluir"></i></asp:LinkButton></td>
                         </tr>
                     </ItemTemplate>
                     <FooterTemplate>
