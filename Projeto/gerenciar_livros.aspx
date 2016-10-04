@@ -51,18 +51,18 @@
 									<th class="col-md-1 text-center">Excluir</th>
 								</tr>
                             </thead>
-                            <tbody>
                     </HeaderTemplate>
                     <ItemTemplate>
+						<tbody>
                         <tr>
                             <td>
                                 <img src="/Cover.ashx?id=<%#Eval("Id") %>" alt="Capa do livro" width="64" height="64" /></td>
                             <td class=""><%#Eval("Nome") %></td>
                             <td class="text-center"><%#Eval("Genero") %></td>
                             <td><%#Eval("Autor") %></td>
-							<td class="text-center"><asp:LinkButton runat="server" ID="btnTrocado" OnCommand="btnTrocado_Command" CommandArgument='<%#Eval("Id") %>'><i class="glyphicon glyphicon-book button excluir"></i></asp:LinkButton></td>
+							<td style="text-align: center"><asp:LinkButton runat="server" ID="btnTrocado" OnCommand="btnTrocado_Command" CommandArgument='<%#Eval("Id") %>'><i class="glyphicon glyphicon-book button excluir"></i></asp:LinkButton></td>
                             <td class="text-center"><a href="Edicao.aspx?id=<%#Eval("Id")%>"><i class="glyphicon glyphicon-pencil button editar"></i></a></td>
-                            <td class="text-center"><asp:LinkButton runat="server" ID="btnExluir" OnCommand="btnExluir_Command" CommandArgument='<%#Eval("Id") %>'><i class="glyphicon glyphicon-remove button excluir"></i></asp:LinkButton></td>
+                            <td style="text-align: center"><asp:LinkButton runat="server" ID="btnExluir" OnCommand="btnExluir_Command" CommandArgument='<%#Eval("Id") %>'><i class="glyphicon glyphicon-remove button excluir"></i></asp:LinkButton></td>
                         </tr>
                     </ItemTemplate>
                     <FooterTemplate>

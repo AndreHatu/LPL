@@ -102,6 +102,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="gerenciar_livros.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\Arvore0.png" />
+    <Content Include="images\Arvore1.png" />
+    <Content Include="images\Arvore2.png" />
+    <Content Include="images\Arvore3.png" />
+    <Content Include="images\Arvore4.png" />
+    <Content Include="images\Arvore5.png" />
+    <Content Include="images\Arvore6.png" />
+    <Content Include="images\Arvore7.png" />
     <Content Include="images\avatar.jpg" />
     <Content Include="images\bg.jpg" />
     <Content Include="images\Capa.PNG" />

@@ -21,6 +21,7 @@
                 <li><a href="gerenciar_livros.aspx">Gerenciar Livros</a></li>
                 <li><a href="livros_didaticos.aspx">Livros Didáticos</a></li>
 				<li><a href="gerenciar_livros.aspx">Livros Trocados <span class="badge"><asp:Label runat="server" ID="lblTrocados"></asp:Label></span></a></li>
+				<li><img title="" src="<%=CaminhoDaImagem %> "+ ".png" width="25" height="25"/></li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <img src="/Avatar.ashx?id=<%=IdUsuario %>" class="round" alt="Foto de Usuario" width="25" height="25" />

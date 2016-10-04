@@ -33,7 +33,7 @@ namespace Projeto
 			{
 				using (SqlConnection conn = Sql.OpenConnection())
 				{
-					using (SqlCommand cmd = new SqlCommand("DELETE FROM tbLivro WHERE tbLivro.Id = @id", conn))
+					using (SqlCommand cmd = new SqlCommand("UPDATE tbLivro SET Trocado = 2 WHERE tbLivro.Id = @id", conn))
 					{
 						cmd.Parameters.AddWithValue("@id", idlivro);
 
