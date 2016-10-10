@@ -41,8 +41,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12 text-center">
-						<h2 class="section-heading">Sobre Nós</h2>
-						<h3 class="section-subheading text-muted">Somos um grupo de feira de ciências do 2º ano do ensino médio do Colégio Bandeirantes, que procura, por meio do empreendedorismo social, tentar melhorar a vida das pessoas à nossa volta </h3>
+						<h2 class="section-heading">Você Sabia?</h2>
 					</div>
 				</div>
 				<div class="row text-center">
@@ -51,24 +50,21 @@
 							<i class="fa fa-circle fa-stack-2x text-primary"></i>
 							<i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">Único do Tipo</h4>
-						<p class="text-muted">Este site foi criado para facilitar trocas de livros, de forma a ajudar o meio ambiente, economizar dinheiro e, principalmente, incentivar a leitura na nossa comunidade.</p>
+						<p class="text-muted">Um aluno usa, em média, 75kg em livros durante o ensino fundamental e médio.</p>
 					</div>
 					<div class="col-md-4 purple">
 						<span class="fa-stack fa-4x">
 							<i class="fa fa-circle fa-stack-2x text-primary"></i>
 							<i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">Descubra Novas Coisas</h4>
-						<p class="text-muted">Nesse site, você pderá trocar os livros que estão empoeirando na prateleira por outros livros, de forma fácil, rápida e efetiva. E devido ao sistema de matches, também aproximamos pessoas com as mesmas preferências literárias. Além disso, também é possível efetuar "trocas" de livros didáticos por meio do sistema de créditos. Desta forma, todos se ajudam por uma leitura e um ensino mais inteligente!</p>
+						<p class="text-muted">Um eucalipto equivale a, aproximadamente, 20 resmas de papel.</p>
 					</div>
 					<div class="col-md-4 purple">
 						<span class="fa-stack fa-4x">
 							<i class="fa fa-circle fa-stack-2x text-primary"></i>
 							<i class="fa fa-lock fa-stack-1x fa-inverse"></i>
 						</span>
-						<h4 class="service-heading">Divirta-Se</h4>
-						<p class="text-muted">Dinheiro não compra felicidade, mas economizar sempre é favorável!<a href="cadastro.aspx"> Cadastre-se Agora!!</a></p>
+						<p class="text-muted">Um aluno do colégio bandeirantes economizaria, aproximadamente, 7500 reais se trocasse seus livros didáticos em todos os anos escolares.<a href="cadastro.aspx"> Cadastre-se Agora!!</a></p>
 					</div>
 				</div>
 			</div>

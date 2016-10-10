@@ -41,14 +41,14 @@ namespace Projeto
 				switch (countstring)
 				{
 					case "0":
-						CaminhoDaImagem = "Arvore0";
+						CaminhoDaImagem = "0";
 						break;
 
 					case "1":
 					case "2":
 					case "3":
 					case "4":
-						CaminhoDaImagem = "Arvore1";
+						CaminhoDaImagem = "1";
 						break;
 
 
@@ -57,7 +57,7 @@ namespace Projeto
 					case "7":
 					case "8":
 					case "9":
-						CaminhoDaImagem = "Arvore2";
+						CaminhoDaImagem = "2";
 						break;
 
 
@@ -66,7 +66,7 @@ namespace Projeto
 					case "12":
 					case "13":
 					case "14":
-						CaminhoDaImagem = "Arvore3";
+						CaminhoDaImagem = "3";
 						break;
 
 
@@ -75,7 +75,7 @@ namespace Projeto
 					case "17":
 					case "18":
 					case "19":
-						CaminhoDaImagem = "Arvore4";
+						CaminhoDaImagem = "4";
 						break;
 
 					case "20":
@@ -83,7 +83,7 @@ namespace Projeto
 					case "22":
 					case "23":
 					case "24":
-						CaminhoDaImagem = "Arvore5";
+						CaminhoDaImagem = "5";
 						break;
 
 					case "25":
@@ -91,7 +91,7 @@ namespace Projeto
 					case "27":
 					case "28":
 					case "29":
-						CaminhoDaImagem = "Arvore6";
+						CaminhoDaImagem = "6";
 						break;
 
 					case "30":
@@ -99,7 +99,7 @@ namespace Projeto
 					case "32":
 					case "33":
 					case "34":
-						CaminhoDaImagem = "Arvore7";
+						CaminhoDaImagem = "7";
 						break;
 				}
 			}

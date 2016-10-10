@@ -102,14 +102,14 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="gerenciar_livros.aspx" />
     <Content Include="Global.asax" />
-    <Content Include="images\Arvore0.png" />
-    <Content Include="images\Arvore1.png" />
-    <Content Include="images\Arvore2.png" />
-    <Content Include="images\Arvore3.png" />
-    <Content Include="images\Arvore4.png" />
-    <Content Include="images\Arvore5.png" />
-    <Content Include="images\Arvore6.png" />
-    <Content Include="images\Arvore7.png" />
+    <Content Include="images\arvores\0.png" />
+    <Content Include="images\arvores\1.png" />
+    <Content Include="images\arvores\2.png" />
+    <Content Include="images\arvores\3.png" />
+    <Content Include="images\arvores\4.png" />
+    <Content Include="images\arvores\5.png" />
+    <Content Include="images\arvores\6.png" />
+    <Content Include="images\arvores\7.png" />
     <Content Include="images\avatar.jpg" />
     <Content Include="images\bg.jpg" />
     <Content Include="images\Capa.PNG" />
@@ -178,6 +178,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Arvore.ashx.cs">
+      <DependentUpon>Arvore.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Avatar.ashx.cs">
       <DependentUpon>Avatar.ashx</DependentUpon>
     </Compile>
@@ -352,6 +355,7 @@
     <Content Include="js\jquery-2.2.1.min.map" />
     <Content Include="Cover.ashx" />
     <Content Include="Avatar.ashx" />
+    <Content Include="Arvore.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

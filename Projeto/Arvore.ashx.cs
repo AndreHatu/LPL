@@ -7,19 +7,19 @@ namespace Projeto
 	/// <summary>
 	/// Summary description for Cover
 	/// </summary>
-	public class Avatar : IHttpHandler
+	public class Arvore : IHttpHandler
 	{
 
 		public void ProcessRequest(HttpContext context)
 		{
-			context.Response.ContentType = "image/jpeg";
+			context.Response.ContentType = "image/png";
 			try
 			{
 
 				int id;
 				if (int.TryParse(context.Request.QueryString["id"], out id) == true)
 				{
-					string path = context.Server.MapPath("~/User_Images/" + id + ".jpg");
+					string path = context.Server.MapPath("~/images/arvores/" + id + ".png");
 					if (System.IO.File.Exists(path))
 					{
 						context.Response.WriteFile(path);

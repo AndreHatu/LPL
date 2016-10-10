@@ -83,6 +83,10 @@
 								</div>
 							</div>
 					</ContentTemplate>
+					<Triggers>
+						<asp:AsyncPostBackTrigger ControlID="btnLike" EventName="Click" />
+						<asp:AsyncPostBackTrigger ControlID="btnDislike" EventName="Click" />
+					</Triggers>
 				</asp:UpdatePanel>
 			</div>
 		</div>
