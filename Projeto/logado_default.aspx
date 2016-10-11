@@ -21,7 +21,7 @@
 
 		<div class="container">
 			<div class="row">
-				<uc1:UCLogin runat="server" ID="UCLogin1" OnLoad="UCLogin1_Load" />
+				<uc1:uclogin runat="server" id="UCLogin1" onload="UCLogin1_Load" />
 			</div>
 
 
@@ -51,7 +51,7 @@
 							</div>
 
 							&nbsp
-						&nbsp
+							&nbsp
 
 						<div class="row">
 							<div class="col-md-2 text-center margin-top-100">

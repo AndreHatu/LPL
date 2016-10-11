@@ -37,6 +37,13 @@ namespace Projeto
 							lblNome.Text = reader.GetString(1);
 							lblSinopse.Text = reader.GetString(2);
 						}
+						else
+						{
+							//nada mais para exibir!!!
+							//mostrar uma msg! :)
+							lblNome.Text = "Não há mais livros por enquanto! Volte mais tarde para explorar mais livros!";
+
+						}
 					}
 				}
 			}
