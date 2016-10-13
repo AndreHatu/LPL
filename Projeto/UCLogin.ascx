@@ -39,8 +39,7 @@
 						<li><a href="logout.aspx"><i class="glyphicon glyphicon-off"></i>Sair</a></li>
 					</ul>
 				</li>
-				<li><%--<a href="Notificacoes.aspx" class="btn btn-link"><i class="glyphicon glyphicon-bell"></i></a>--%>
-					<a class="btn btn-default" href="Notificacoes.aspx"><i class="glyphicon glyphicon-bell"></i> <span class="badge"><asp:Label ID="lblNotificacoes" runat="server"></asp:Label></span></a>
+				<li><a href="Notificacoes.aspx" class="btn btn-link"><i class="glyphicon glyphicon-bell"></i></a>
 				</li>
 			</ul>
 		</div>
