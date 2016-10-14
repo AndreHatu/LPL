@@ -33,11 +33,11 @@
 						<table class="table table-hover">
 							<thead>
 								<tr>
-									<th class="col-md-1"></th>
-									<th class="col-md-2 ">Nome</th>
-									<th class="col-md-3 ">Email</th>
-									<th class="col-md-3 text-center">Livros que querem de você</th>
-									<th class="col-md-3 text-center">Livros que você quer de outros</th>
+									<th class="col-lg-1 col-sm-2"></th>
+									<th class="col-lg-2 col-sm-2">Nome</th>
+									<th class="col-lg-3 col-sm-3">Email</th>
+									<th class="col-lg-3 col-sm-3 text-center">Livros que querem de você</th>
+									<th class="col-lg-3 col-sm-2 text-center">Livros que você quer de outros</th>
 								</tr>
 							</thead>
 							<tbody>

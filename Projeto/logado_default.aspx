@@ -31,7 +31,7 @@
 					<ContentTemplate>
 						<div class="row grey row-padding-extra round">
 							<div class="row">
-								<div class="col-md-2 col-md-offset-10">
+								<div class="col-lg-2 col-lg-offset-10">
 									<a href="Likes.aspx" class="btn btn-default">Editar Likes/Dislikes</a>
 								</div>
 
@@ -54,20 +54,20 @@
 							&nbsp
 
 						<div class="row">
-							<div class="col-md-2 text-center margin-top-100">
+							<div class="col-lg-2 text-center margin-top-100">
 								<asp:LinkButton ID="btnDislike" runat="server" CssClass="btn btn-danger btn-circle" OnClick="click_dislike"><i class="glyphicon glyphicon-thumbs-down"></i></asp:LinkButton>
 							</div>
-							<div class="col-md-4 col-sm-6">
+							<div class="col-lg-4 col-sm-6">
 								<div class="panel panel-success row-padding text-center">
 									<img src="/Cover.ashx?id=<%=IdLivro %>" alt="Capa do livro" width="320" height="320" />
 								</div>
 							</div>
-							<div class="col-md-4 col-sm-6">
+							<div class="col-lg-4 col-sm-6">
 								<div class="panel panel-body">
 									<asp:Label runat="server" ID="lblSinopse" Width="320" Height="320"></asp:Label>
 								</div>
 							</div>
-							<div class="col-md-2 text-center">
+							<div class="col-lg-2 text-center">
 								<asp:LinkButton ID="btnLike" runat="server" CssClass="btn btn-success btn-circle margin-top-100" OnClick="click_like"><i class="glyphicon glyphicon-thumbs-up"></i></asp:LinkButton>
 							</div>
 						</div>

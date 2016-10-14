@@ -37,6 +37,12 @@ namespace Projeto
 							lblNome.Text = reader.GetString(1);
 							lblSinopse.Text = reader.GetString(2);
 						}
+<<<<<<< HEAD
+                        else
+                        {
+                            lblNome.Text = "Nenhum livro para explorar! Entre mais tarde para ver novos livros!";
+                        }
+=======
 						else
 						{
 							//nada mais para exibir!!!
@@ -44,6 +50,7 @@ namespace Projeto
 							lblNome.Text = "Não há mais livros por enquanto! Volte mais tarde para explorar mais livros!";
 
 						}
+>>>>>>> f7640170caed0fb11ea15c465f058d47a23fe203
 					}
 				}
 			}
