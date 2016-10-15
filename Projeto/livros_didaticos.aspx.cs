@@ -26,7 +26,7 @@ namespace Projeto
 				{
 
 					// Cria um comando para selecionar registros da tabela
-					using (SqlCommand cmd = new SqlCommand("SELECT tbLivro.Id, tbLivro.Nome, tbLivro.Autor, tbLivro.IdGenero, tbGenero.Nome FROM tbLivro INNER JOIN tbGenero ON tbLivro.IdGenero = tbGenero.Id WHERE Didatico = 1 ORDER BY tbLivro.Nome ASC", conn))
+					using (SqlCommand cmd = new SqlCommand("SELECT tbLivro.Id, tbLivro.Nome, tbLivro.Autor, tbLivro.IdGenero, tbGenero.Nome FROM tbLivro INNER JOIN tbGenero ON tbLivro.IdGenero = tbGenero.Id WHERE Didatico = 1 AND Trocado = 0 ORDER BY tbLivro.Nome ASC", conn))
 					{
 
 						using (SqlDataReader reader = cmd.ExecuteReader())
