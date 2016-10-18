@@ -98,7 +98,6 @@
     <Content Include="Default.aspx" />
     <Content Include="Edicao.aspx" />
     <Content Include="EdicaoErro.aspx" />
-    <Content Include="Foda.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="gerenciar_livros.aspx" />
     <Content Include="Global.asax" />
@@ -166,8 +165,6 @@
     <Content Include="Notificacoes.aspx" />
     <Content Include="slats.jpg" />
     <Content Include="SQL.sql" />
-    <Content Include="Teste.aspx" />
-    <Content Include="tinder.aspx" />
     <Content Include="UCGuest.ascx" />
     <Content Include="UCLivroDidatico1.ascx" />
     <Content Include="UCLivroDidatico2.ascx" />
@@ -236,13 +233,6 @@
     <Compile Include="EdicaoErro.aspx.designer.cs">
       <DependentUpon>EdicaoErro.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Foda.aspx.cs">
-      <DependentUpon>Foda.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Foda.aspx.designer.cs">
-      <DependentUpon>Foda.aspx</DependentUpon>
-    </Compile>
     <Compile Include="gerenciar_livros.aspx.cs">
       <DependentUpon>gerenciar_livros.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -295,20 +285,6 @@
       <DependentUpon>Notificacoes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Teste.aspx.cs">
-      <DependentUpon>Teste.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Teste.aspx.designer.cs">
-      <DependentUpon>Teste.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="tinder.aspx.cs">
-      <DependentUpon>tinder.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="tinder.aspx.designer.cs">
-      <DependentUpon>tinder.aspx</DependentUpon>
-    </Compile>
     <Compile Include="UCGuest.ascx.cs">
       <DependentUpon>UCGuest.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
