@@ -84,7 +84,7 @@ namespace Projeto.Models
 			HttpContext.Current.Response.SetCookie(cookie);
 		}
 
-		public static Usuario Criar(string email, string nome, DateTime nascimento, string password, string estado)
+		public static Usuario Criar(string email, string nome, DateTime nascimento, string password, string estado, string guid)
 		{
             if (string.IsNullOrWhiteSpace(email) || email.Length > TamanhoMaximoDoEmail)
             {
@@ -112,13 +112,14 @@ namespace Projeto.Models
 				// using (SqlCommand command = new SqlCommand("INSERT INTO tbUsuario (Login, Nome, Password, Token) OUTPUT tbUser.Id VALUES (@login, @nome, @password, '')", conn)) {
 
 				// Para o Azure
-				using (SqlCommand command = new SqlCommand("INSERT INTO tbUsuario (Email, Nome, Nascimento, Password, Token) OUTPUT INSERTED.Id VALUES (@email, @nome, @nascimento, @password, '')", conn))
+				using (SqlCommand command = new SqlCommand("INSERT INTO tbUsuario (Email, Nome, Nascimento, Password, Token, GUID, Validar) OUTPUT INSERTED.Id VALUES (@email, @nome, @nascimento, @password, '', @guid, 0)", conn))
 				{
 
 					command.Parameters.AddWithValue("@email", email);
 					command.Parameters.AddWithValue("@nome", nome);
                     command.Parameters.AddWithValue("@nascimento", nascimento);
 					command.Parameters.AddWithValue("@password", PasswordHash.CreateHash(password));
+					command.Parameters.AddWithValue("@guid", guid);
 
 					int id = (int)command.ExecuteScalar();
 

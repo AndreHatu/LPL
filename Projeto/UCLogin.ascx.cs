@@ -10,9 +10,14 @@ namespace Projeto
 	{
 		public Usuario Usuario { get; set; }
 		public string CaminhoDaImagem { get; set; }
+		public bool IgnorarRedir { get; set; }
 		public int IdUsuario;
 		protected void Page_Load(object sender, EventArgs e)
 		{
+			if (IgnorarRedir == true)
+			{
+				return;
+			}
 			Usuario = Usuario.Validar();
 			if (Usuario == null)
 			{

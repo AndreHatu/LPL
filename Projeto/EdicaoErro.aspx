@@ -43,8 +43,6 @@
                 </div>
             </div>
 
-
-
             <div class="row">
                 <div class="row white row-padding-extra round">
                     <div class="col-md-3"></div>

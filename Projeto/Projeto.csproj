@@ -169,6 +169,7 @@
     <Content Include="UCLivroDidatico1.ascx" />
     <Content Include="UCLivroDidatico2.ascx" />
     <Content Include="UCLogin.ascx" />
+    <Content Include="Validar.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -317,6 +318,13 @@
     <Compile Include="Utils\ImageSaver.cs" />
     <Compile Include="Utils\PasswordHash.cs" />
     <Compile Include="Utils\Sql.cs" />
+    <Compile Include="Validar.aspx.cs">
+      <DependentUpon>Validar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Validar.aspx.designer.cs">
+      <DependentUpon>Validar.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

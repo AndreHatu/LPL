@@ -1,6 +1,6 @@
 ﻿using System;
 using Projeto.Models;
-
+using System.Text;
 
 namespace Projeto
 {
@@ -101,12 +101,13 @@ namespace Projeto
 
 			string nome = txtNome.Text.Trim();
 			string estado = "SP";
-			string guid = new Guid.tostring();
+			string guid = new Guid().ToString();
+
 			Models.Usuario user;
 
 			try
 			{
-				user = Models.Usuario.Criar(email, nome, nascimento, password, estado);
+				user= Models.Usuario.Criar(email, nome, nascimento, password, estado, guid);
 			}
 			catch (Exception ex)
 			{
@@ -125,15 +126,8 @@ namespace Projeto
 			//CADASTRAR GUID E VALIDADO NO BANCO DE DADOS
 			//////////////////////////////////////////////////////////////////
 
-			//try
-			//{
-
-			//}
-
 			try
 			{
-				//Models.Usuario.FazerLogin(email, password);
-
 				// Especifica o servidor SMTP e a porta
 				using (System.Net.Mail.SmtpClient client = new System.Net.Mail.SmtpClient("smtp.office365.com", 587))
 				{
